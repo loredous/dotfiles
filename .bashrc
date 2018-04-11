@@ -116,3 +116,7 @@ fi
 
 alias kali='sudo docker run -ti --rm --mount src=kali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql --mount src=msf-db,dst=/usr/share/metasploit-framework/config my-kali'
 alias msf='sudo docker run -ti --rm --mount src=kali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql --mount src=msf-db,dst=/usr/share/metasploit-framework/config my-kali /bin/bash -c "service postgresql start; msfconsole"'
+
+
+# Strings libbfd vuln fix (CVE-2014-8485)
+alias strings='strings -a'
